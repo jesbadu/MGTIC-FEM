@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Calificaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Calificaciones</h1>
+    </header>
+
+    <main>
+        <section class="consulta-calificaciones">
+            <form id="consultaCalificacionesForm">
+                <div class="campo">
+                    <label for="matriculaAlumno">Matrícula del Alumno:</label>
+                    <input type="text" id="matriculaAlumno" name="matriculaAlumno" required>
+                </div>
+                <button type="submit" class="boton">Consultar</button>
+            </form>
+
+            <div id="resultadosCalificaciones" style="display: none;">
+                <h2>Calificaciones</h2>
+                <table id="tablaCalificaciones">
+                    <thead>
+                        <tr>
+                            <th>Práctica</th>
+                            <th>Calificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Prototipo Evaluación Clínica</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

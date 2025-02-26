@@ -1,0 +1,72 @@
+/* Colores principales */
+:root {
+    --color-verde: #4CAF50; /* Verde */
+    --color-amarillo-fondo: #FFEB3B; /* Amarillo para fondos */
+    --color-texto-negro: #000; /* Negro para texto */
+    --color-texto-blanco: #FFF; /* Blanco para texto */
+}
+
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-texto-negro); /* Texto negro por defecto */
+}
+
+header {
+    background-color: var(--color-amarillo-fondo);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--color-amarillo-fondo);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para botones (ejemplo) */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-verde);
+    color: var(--color-texto-blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.boton:hover {
+    background-color: #43A047; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para formularios (ejemplo) */
+.formulario {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+   
+    
+}

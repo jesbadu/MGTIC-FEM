@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro y Gestión de Docente</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Registro y Gestión de Docente</h1>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Registro de Docente</h2>
+      <form id="registroDocente">
+        <div class="campo">
+          <label for="empleado">Número de Empleado:</label>
+          <input type="text" id="empleado" name="empleado" required>
+        </div>
+
+        <div class="campo">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="materia">Materia:</label>
+          <input type="text" id="materia" name="materia" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo Institucional:</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <button type="submit" class="boton">Registrar</button>
+      </form>
+    </section>
+
+    <section class="gestion">
+      <h2>Gestión de Prácticas</h2>
+      <form id="asignarPractica">
+        <div class="campo">
+          <label for="matriculaAlumno">Matrícula del Alumno:</label>
+          <input type="text" id="matriculaAlumno" name="matriculaAlumno" required>
+        </div>
+
+        <div class="campo">
+          <label for="practica">Práctica a Asignar:</label>
+          <select id="practica" name="practica" required>
+            <option value="">Seleccione una práctica</option>
+            <option value="1">1. Lavado de manos.</option>
+            <option value="2">2. Preparación de material y equipo.</option>
+            <option value="3">3. Calzado de guantes.</option>
+            <option value="4">4. Arreglo de cama.</option>
+            <option value="5">5. Arreglo de cama: Anestesia.</option>
+            <option value="6">6. Posiciones del paciente.</option>
+            <option value="7">7. Medición de Signos vitales.</option>
+            <option value="8">8. Somatometría.</option>
+            <option value="9">9. Aplicación de Vendajes.</option>
+            <option value="10">10. Movilización/Traslado al paciente.</option>
+            <option value="11">11. Oxigenoterapia.</option>
+            <option value="12">12. Instalación de Sonda nasogástrica.</option>
+            <option value="13">13. Medición de Glucometría.</option>
+            <option value="14">14. Administración de enema.</option>
+            <option value="15">15. Aseo de genitales.</option>
+            <option value="16">16. Instalación de Cateterismo vesical.</option>
+            <option value="17">17. Aseo del paciente (cavidades).</option>
+            <option value="18">18. Administración Medicamento: VO.</option>
+            <option value="19">19. Administración Medicamento: Nasal, oftálmica, ótica.</option>
+            <option value="20">20. Administración Medicamento: vía ID.</option>
+            <option value="21">21. Administración Medicamento: vía SC.</option>
+            <option value="22">22. Administración Medicamento: vía I.M.</option>
+            <option value="23">23. Administración Medicamento: vía I.V.</option>
+            <option value="24">24. Instalación de Venoclisis.</option>
+            <option value="25">25. Aspiración de secreciones.</option>
+            <option value="26">26. Baño de esponja.</option>
+            <option value="27">27. Técnica para Amortajamiento.</option>
+            <option value="28">28. Curación UPP (úlcera por presión).</option>
+            <option value="29">29. Aplicación de nebulizaciones.</option>
+          </select>
+        </div>
+
+        <button type="submit" class="boton">Asignar Práctica</button>
+      </form>
+
+      <h2>Calificar Práctica</h2>
+      <form id="calificarPractica">
+        <div class="campo">
+          <label for="matriculaAlumnoCalificar">Matrícula del Alumno:</label>
+          <input type="text" id="matriculaAlumnoCalificar" name="matriculaAlumnoCalificar" required>
+        </div>
+
+        <div class="campo">
+          <label for="practicaCalificar">Práctica a Calificar:</label>
+          <select id="practicaCalificar" name="practicaCalificar" required>
+            <option value="">Seleccione una práctica</option>
+            <option value="1">1. Lavado de manos.</option>
+            <option value="2">2. Preparación de material y equipo.</option>
+            <option value="3">3. Calzado de guantes.</option>
+            <option value="4">4. Arreglo de cama.</option>
+            <option value="5">5. Arreglo de cama: Anestesia.</option>
+            <option value="6">6. Posiciones del paciente.</option>
+            <option value="7">7. Medición de Signos vitales.</option>
+            <option value="8">8. Somatometría.</option>
+            <option value="9">9. Aplicación de Vendajes.</option>
+            <option value="10">10. Movilización/Traslado al paciente.</option>
+            <option value="11">11. Oxigenoterapia.</option>
+            <option value="12">12. Instalación de Sonda nasogástrica.</option>
+            <option value="13">13. Medición de Glucometría.</option>
+            <option value="14">14. Administración de enema.</option>
+            <option value="15">15. Aseo de genitales.</option>
+            <option value="16">16. Instalación de Cateterismo vesical.</option>
+            <option value="17">17. Aseo del paciente (cavidades).</option>
+            <option value="18">18. Administración Medicamento: VO.</option>
+            <option value="19">19. Administración Medicamento: Nasal, oftálmica, ótica.</option>
+            <option value="20">20. Administración Medicamento: vía ID.</option>
+            <option value="21">21. Administración Medicamento: vía SC.</option>
+            <option value="22">22. Administración Medicamento: vía I.M.</option>
+            <option value="23">23. Administración Medicamento: vía I.V.</option>
+            <option value="24">24. Instalación de Venoclisis.</option>
+            <option value="25">25. Aspiración de secreciones.</option>
+            <option value="26">26. Baño de esponja.</option>
+            <option value="27">27. Técnica para Amortajamiento.</option>
+            <option value="28">28. Curación UPP (úlcera por presión).</option>
+            <option value="29">29. Aplicación de nebulizaciones.</option>
+            <option value="">Seleccione una práctica</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="calificacion">Calificación:</label>
+          <input type="number" id="calificacion" name="calificacion" min="0" max="100" required>
+        </div>
+
+        <button type="submit" class="boton">Calificar Práctica</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Prototipo Evaluación Clínica</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
